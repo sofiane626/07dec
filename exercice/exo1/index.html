@@ -1,15 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./public/style/style.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <header></header>
-        <footer></footer>
-        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron bg-light p-5">
+            <h1 class="display-4">Ici vous avez le component jummbotron</h1>
+            <p class="lead">il y a même du texte que vous pouvez rajouter pour des explications supplémentaire</p>
+            <hr class="my-4">
+            <p>Ici des information segondaire</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Un bouton déja tout fait pour vous</a>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container w-75 p-5">
+            <h2>Nous nous trouvons ici dans un container qui est limiter en largeur <span class="badge bg-success">et
+                    ceci
+                    est un badge</span></h2>
+            <h4>voila ici une collection de différent type de badge</h4>
+            <a class="badge bg-primary">moi je suis un lien<a> <span class="badge rounded-pill text-bg-danger">Moi je
+                        suis
+                        un arrondi</span> <span class="badge text-bg-warning">et moi j'arbore juste une autre
+                        couleur</span>
+                    <div class="container-fluid w-50 text-center">
+                        <h2>Vous avez ici un container fluid</h2>
+                        <p>mais qu'est-ce que cela veut dire ? Quelle est la différence ? Et pourquoi le texte est
+                            soudainement centré
+                        </p>
+                        <div class="alert alert-danger text-start" role="alert">
+                            <h6>Recherche dans la doc ..... LA DOOOOOOOC!!!!!!!!!</h6>
+                        </div>
+                    </div>
+        </div>
+
+        <section class="h-80 p-5 bg-black text-center" style="overflow: auto;">
+            <p class="text-light">Voici une section avec un fond noir et du texte blanc. <br>Mais comment fait-on cela ?
+                ...de la magie noir... Mouahahahaha</p>
+            <div class="alert alert-light text-start" role="alert">
+                <h6>Et si tu regarde de plus pret, nous somme entourer par une force misterieuse qui nous repousse des
+                    bords.</h6>
+            </div>
+        </section>
+        <div class="row align-items-center m-0 pt-5">
+            <div class="col">
+                <h4>Une liste de chose à faire</h4>
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                        Réviser le soir.
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-action">Être curieux et ne pas hésiter
+                        à
+                        chercher par moi même et à tester.</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Toujours croire en la
+                        puissance binaire du coach <span class="badge bg-success text-white">que le code soit sur
+                            lui.</span></button>
+                </div>
+            </div>
+            <div class="col">
+                <h4>Les cartes ne sont pas faite que<br> pour jouer</h4>
+                <div class="card border border-secondary">
+                    <img src="./public/img/img_1.jpg" class="card-img-top" alt="Trèfle">
+                    <div class="card-body text-white bg-secondary">
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>L'as de trefle qui pique ton coeur</p>
+                            </blockquote>
+                            <figcaption>Caroline
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <h4>J'espère que ton apprentissage de bootstrap évolue aussi vite</h4>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"
+                        aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"
+                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="alert alert-info mx-auto m-5" role="alert">
+                    <b>C'est moi ou les 3 colonnes du dessus sont centré verticalement</b>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
